@@ -1,0 +1,70 @@
+body{
+  background-color: black;
+  /*background: url("background.jpg") no-repeat center center fixed;*/
+  /*background-size: cover;*/
+  margin: 0;
+}
+
+#title {
+  background-color: white;
+}
+
+svg{
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.video {
+  /*background-color:;*/
+  float: right;
+}
+
+.scoreboard{
+  float: left;
+  background-color: black;
+  background-size: cover;
+}
+.highscore{
+  font-size: large;
+  color: yellow
+  /*margin: 10px;*/
+}
+.current{
+  color: lightgreen
+  /*font-size: medium small;*/
+}
+.collisions{
+  color: red
+  /*font-size: medium small;*/
+}
+
+
+.player{
+  fill: red;
+}
+.player.collision{
+  
+  stroke: yellow;
+  stroke-width: 5;
+}
+
+image {
+    -webkit-animation: anim 10s infinite linear;
+    animation: anim 10s infinite linear;
+
+}
+
+@-webkit-keyframes anim {
+    from {-webkit-transform: rotateY(0deg);}
+    to {-webkit-transform: rotateY(360deg);}
+}
+
+@keyframes anim {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+  
+}
